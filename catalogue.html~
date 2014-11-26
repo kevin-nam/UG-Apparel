@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title> Urban Groove Store - Catalogue </title>
+
+	<center>
+	<h1>URBAN GROOVE STORE</h1>
+	<img src="uglogo.jpg" alt="Urban Groove Store" height="250" width="250">
+	<div class="space"></div>
+	<div id="umenu">
+		<a href="index.html">HOME</a>
+		<a href="www.google.ca">CATALOGUE</a>
+		<a href="www.google.ca">LOGIN</a>
+	</div>
+	<div class="space"></div>
+	<div class="line"></div>
+
+
+	</center>
+
+</head>
+
+<body>
+<center>
+<br>
+<img src="items/tommy.jpg" alt="tommy" width="300" height="400">
+<img src="items/tommy.jpg" alt="tommy" width="300" height="400">
+<img src="items/tommy.jpg" alt="tommy" width="300" height="400">
+<div class="space"></div>
+<div id="items">
+	<p><i>TOMMY1</i>
+	<i>TOMMY2</i>
+	<i>TOMMY3</i></p>
+</div>
+
+</center>
+</body>
+
+
+</html>

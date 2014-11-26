@@ -48,6 +48,16 @@ h1 {
 	color: #313030;
 }
 
+td {
+	font-style: italic;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td p{
+	font-size: 12px;
+}
+
 .footer{
 	font-size: 10px;
 	color: #313030;
