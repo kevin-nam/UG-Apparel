@@ -40,7 +40,7 @@ h1 {
 	border-bottom:1px solid #313030;
 }
 
-.footer a{
+#footer a{
 	
 	padding: 15px;
 	text-decoration: none;
@@ -58,7 +58,7 @@ td p{
 	font-size: 12px;
 }
 
-.footer{
+#footer{
 	font-size: 10px;
 	color: #313030;
 
