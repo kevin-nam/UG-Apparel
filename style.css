@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body {
+	text-align: center;
+}
+
+h1 {
+	color: #313030;
+	font-weight: bold;
+
+}
+
+.space{
+	margin-bottom: 10px;
+}
+
+#umenu a {
+	padding: 15px;
+	text-decoration: none;
+	color: #313030;
+}
+
+#umenu a:hover{
+	text-decoration: underline;
+	
+}
+
+.upost{
+	text-align: left;
+	width: 50%;
+	display:inline-block;
+	word-wrap: break-word;
+}
+
+.line{
+	height:1px;
+	border-bottom:1px solid #313030;
+}
+
+.footer a{
+	
+	padding: 15px;
+	text-decoration: none;
+	font-size: 10px;
+	color: #313030;
+}
+
+td {
+	font-style: italic;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td p{
+	font-size: 12px;
+}
+
+.footer{
+	font-size: 10px;
+	color: #313030;
+
+}
+
+	
