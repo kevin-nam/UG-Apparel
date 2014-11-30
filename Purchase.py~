@@ -33,8 +33,7 @@ print"""
 </head>
 <!--END HEADER-->
 """
-if(f):
-	print "<h1> INVENTORY.CSV WORKS </h1>"
+
 print "<body><center><br>"
 
 print "<h1>You ordered the following: </h1>"
