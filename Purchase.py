@@ -32,7 +32,7 @@ print"""
 	<div id="umenu">
 		<a href="index.html">HOME</a>
 		<a href="catalogue.html">CATALOGUE</a>
-		<a href="www.google.ca">LOGIN</a>
+		<a href="login.html">LOGIN</a>
 	</div>
 	<div class="space"></div>
 	<div class="line"></div>
@@ -47,7 +47,7 @@ print "<body><center><br>"
 
 #CHECKS IF USER IS LOGGED IN:
 user = form.getvalue("user")
-if user != "null":
+if user == "null":
 	print "<h1>You must be logged in to order</h1>"
 	print '<a href="login.html">Click here to login</a>'
 	print "</center></body>"
@@ -114,7 +114,7 @@ print """
 		<br><br><br>		
 		<a href="index.html">HOME</a>
 		<a href="catalogue.html">CATALOGUE</a>
-		<a href="www.google.ca">LOGIN</a>
+		<a href="login.html">LOGIN</a>
 		<br>
 		<p>Created by: Kevin Nam & Thomas Wong (2014)<p>
 </div>
