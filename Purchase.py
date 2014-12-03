@@ -52,6 +52,7 @@ if user == "null":
 	print '<a href="login.html">Click here to login</a>'
 	print "</center></body>"
 else:	
+	print '<img src="items/thankyou.jpg" alt="Thank you!" width="800px" height="300px">'
 	#QUANTITY USED
 	beaniex = form.getvalue('beaniex')
 	crewneckx = form.getvalue('crewneckx')
@@ -78,7 +79,7 @@ else:
 	if form.getvalue('shirt'):
 		if(int(item[2][1])>=int(shirtx)):
 			item[2][1] = int(item[2][1]) - int(shirtx)
-			print "<p>%d x Black UG T-Shirt - $%d</p>" %(int(shirtx),15*int(shirtx))
+			print "<p>%d x Black UG Tanktop - $%d</p>" %(int(shirtx),15*int(shirtx))
 			sum += 15*int(shirtx)
 		else:
 			print"<p>Black UG T-Shirt - Insufficient Quantity</p>"
