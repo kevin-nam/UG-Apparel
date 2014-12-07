@@ -71,24 +71,26 @@ pword[p] = '\0';
         
 }
 fclose(fpoint);
-}
-int log = 0;
+  }
 if (usrexist == 1){
 printf("<center><h1> Welcome %s  </h1></center>\n",usern);
-FILE *logged, *alreadylogged, *html;
-alreadylogged = fopen("./loggedin.csv","r");
-while(fgets(line, 99, alreadylogged) != NULL)
-{
-if (strcmp(usern,strtok(line, commasep)) == 0) log = 1;
-else continue;
-}
-fclose(alreadylogged);
-if(log == 0)
-{
+FILE *logged, *html;
 logged = fopen("./loggedin.csv", "a");
 fprintf(logged, "%s,", usern);
 fclose(logged);
+//SWITCH TO CATALOGUE
+html = fopen("./catalogue.html", "r");
+while(fgets(line,99,html) != NULL){
+
+if(strcmp(line,"<input type=\"hidden\" name=\"user\" value=\"null\">\n")==0) {
+printf("<input type=\"hidden\" name=\"user\" value=\"%s\"\n", usern);
 }
+else printf("%s\n",line);
+}
+}
+else
+{
+FILE *html;
 html = fopen("./login.html", "r");
 while(fgets(line,99,html) != NULL){
 if(strcmp(line,"<!--insert here-->\n")==0){
