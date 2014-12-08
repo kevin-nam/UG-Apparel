@@ -27,7 +27,7 @@ char *lenstr;
 char input[80], data[80], line[100], usern[50], pword[50];
 long len;
 char commasep[2] = ",";
-int usrexist = 0, i=0, action = 0, p=0, u=0;
+int usrexist = 0, i=0, action = 0, p=0, u=0, log=0;
 printf("%s%c%c\n",
 "Content-Type:text/html;charset=iso-8859-1",13,10);
 printf("<TITLE>Response</TITLE>\n");
@@ -71,8 +71,7 @@ pword[p] = '\0';
         
 }
 fclose(fpoint);
-}
-int log = 0;
+  }
 if (usrexist == 1){
 printf("<center><h1> Welcome %s  </h1></center>\n",usern);
 FILE *logged, *alreadylogged, *html;
@@ -89,6 +88,19 @@ logged = fopen("./loggedin.csv", "a");
 fprintf(logged, "%s,", usern);
 fclose(logged);
 }
+//SWITCH TO CATALOGUE
+html = fopen("./catalogue.html", "r");
+while(fgets(line,99,html) != NULL){
+
+if(strcmp(line,"<input type=\"hidden\" name=\"user\" value=\"null\">\n")==0) {
+printf("<input type=\"hidden\" name=\"user\" value=\"%s\"\n", usern);
+}
+else printf("%s\n",line);
+}
+}
+else
+{
+FILE *html;
 html = fopen("./login.html", "r");
 while(fgets(line,99,html) != NULL){
 if(strcmp(line,"<!--insert here-->\n")==0){
